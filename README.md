@@ -1,3 +1,5 @@
-# tic-tac-toe-AllScript
-tic tac toe in many languages
+# Tic-Tac-Toe-AllScript
+Tic Tac Toe in many languages
+
+
 Feel free to add your own!
