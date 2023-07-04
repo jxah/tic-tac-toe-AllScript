@@ -18,3 +18,12 @@ gameMap = """
 
 print("Welcome to tic-tac-toe.  Here is the game map:")
 print(gameMap)
+
+gameState = ['   ']*9
+gameState[0] = ' x '
+print(gameboard.format(*tuple(gameState)))
+
+while True:
+    enterx = (input)
+    entero = (input)
+    if (done): break
