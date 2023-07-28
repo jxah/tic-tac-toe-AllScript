@@ -24,8 +24,20 @@ gameState = ['   ']*9
 #gameState[0] = ' x '
 print(gameboard.format(*tuple(gameState)))
 
-while True:
-    enterx = (input)
-    entero = (input)
-    if enterx == 1 : gameState[1] = " X "
+while True: #game play loop
+    invalid = 1
+    while invalid == 1: #check input loop
+        enterx = input("Enter space number for player X:")
+        print(enterx," entered")
+        if (gameState[enterx] == " X ") or (gameState[enterx] == " O ") : invalid = 1
+        else : invalid = 0
+    gameState[enterx] = " X "
+    print(gameboard.format(*tuple(gameState)))
+    invalid = 1
+    while invalid == 1: #check input loop
+        entero = input("enter space number for player O:")
+        if gameState[entero] != "   " : invalid = 1
+        else : invalid = 0
+    gameState[entero] = " O "
+    print(gameboard.format(*tuple(gameState)))
 (done) = 0 
