@@ -25,6 +25,7 @@ gameState = ['   ']*9
 #gameState[0] = ' x '
 print(gameboard.format(*tuple(gameState)))
 
+
 while done == 0: #game play loop
     invalid = 0
     enterx = int(input("Enter space number for " + playerX + ":"))
